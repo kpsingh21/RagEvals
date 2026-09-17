@@ -1,0 +1,28 @@
+[project]
+name = "ragevals"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Krishnapal Singh", email = "" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.9",
+    "deepeval>=4.2.3",
+    "langchain>=1.4.1",
+    "langchain-chroma>=1.1.0",
+    "langchain-huggingface>=1.2.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-text-splitters>=1.1.2",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.0.1",
+]
+
+[project.scripts]
+ragevals = "ragevals:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
